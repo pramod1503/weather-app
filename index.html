@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preload" as="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+</head>
+<body class=" grid font-playwrite place-content-center min-h-screen bg-slate-900 text-white">
+     <div class="w-96 p-5 bg-gradient-to-b  from-blue-700 to-sky-400 rounded-xl " id="card">
+        <div class="w-full flex items-center justify-between" id="search">
+            <input class=" w-72 border-0 text-slate-600 outline-none p-3 rounded-3xl " type="text" placeholder="Enter city name" spellcheck="true"/>
+            <button class="w-12 bg-white p-3 rounded-full"><img class="w-12" src="./images/search.png" alt=""></button>
+        </div>
+        <div class="text-base hidden" id="error">
+            <p>Invalid city Name</p>
+        </div>
+        
+        <div class=" hidden" id="weather">
+            <img src="./images/rain.png" id="weatherIcon" class="w-36 mx-24">
+            <h1 id="temp" class="font-medium text-6xl text-center m-5">22 °C</h1>
+            <h2 id="city" class="font-normal mt-2 text-5xl text-center">Belagavi</h2>
+            <div id="details" class=" w-full flex justify-between items-center">
+                <div id="col">
+                    <img class="w-20 m-2 p-1" src="./images/humidity.png" >
+                    <div class="ml-5" >
+                        <p id="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div id="col">
+                    <img class="w-20 p-2 m-1" src="./images/wind.png" >
+                    <div class="mr-5">
+                        <p id="wind">5km/h</p>
+                        <p>wind Speed</p>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+     </div>
+     <script src="./script.js"></script>
+</body>
+</html>
